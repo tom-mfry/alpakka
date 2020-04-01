@@ -1,0 +1,30 @@
+def remove_every_other(my_list):
+    new_list = []
+    count = 0
+    print(my_list)
+    for i in my_list:
+        if count%2 == 0:
+            new_list.append(i)
+        print(count)
+        count += 1
+
+
+    return new_list
+    
+    
+    # ------------------------------
+    
+    
+    def remove_every_other(my_list):
+    return my_list[::2]
+    
+    
+    # ------------------------------
+    
+    
+    def remove_every_other(my_list):
+    r = []
+    for i in range(len(my_list)):
+        if i % 2 == 0:
+            r.append(my_list[i])
+    return r
